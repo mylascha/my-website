@@ -1,138 +1,189 @@
+/* ---------------- BODY ---------------- */
+
 body {
-
     margin: 0;
-
     font-family: Arial, sans-serif;
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        #8be8ff 0%,
+        #5fcfff 25%,
+        #3298e6 55%,
+        #1f66b8 80%,
+        #143f73 100%
+    );
+
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* ---------- Schwarze Quadrate ---------- */
+
+body::before {
+
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    background-image:
+        linear-gradient(rgba(0,0,0,.08) 2px, transparent 2px),
+        linear-gradient(90deg, rgba(0,0,0,.08) 2px, transparent 2px);
+
+    background-size: 170px 170px;
+
+    pointer-events: none;
+
+}
+
+/* ---------- Dunkelblaue Quadrate ---------- */
+
+body::after {
+
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    transform: translate(18px,18px);
+
+    background-image:
+        linear-gradient(rgba(0,40,90,.12) 2px, transparent 2px),
+        linear-gradient(90deg, rgba(0,40,90,.12) 2px, transparent 2px);
+
+    background-size: 170px 170px;
+
+    pointer-events: none;
+
+}
+
+/* ---------------- LAYOUT ---------------- */
+
+.container {
+
+    display: flex;
+
+    height: 100vh;
+
+}
+
+/* ---------------- SIDEBAR ---------------- */
+
+.sidebar {
+
+    width: 280px;
+
+    background: rgba(20,20,40,.35);
+
+    backdrop-filter: blur(12px);
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+}
+
+.sidebar h1 {
+
+    text-align: center;
+
+    font-size: 34px;
+
+    margin-bottom: 40px;
 
     color: white;
 
-    background:
-    linear-gradient(135deg,
-    #4fc3f7 0%,
-    #2b7ec1 30%,
-    #184f87 60%,
-    #0f3157 100%);
+    text-shadow:
+        3px 3px black,
+        6px 6px 10px rgba(0,0,0,.4);
 
 }
 
-/* Schwarze Quadrate */
+.sidebar button {
 
-body::before{
+    width: 100%;
 
-content:"";
+    margin-bottom: 15px;
 
-position:fixed;
+    padding: 15px;
 
-top:0;
+    border: none;
 
-left:0;
+    border-radius: 15px;
 
-width:100%;
+    background: white;
 
-height:100%;
+    font-size: 18px;
 
-background-image:
+    cursor: pointer;
 
-linear-gradient(rgba(0,0,0,0.18) 2px, transparent 2px),
-
-linear-gradient(90deg, rgba(0,0,0,0.18) 2px, transparent 2px);
-
-background-size:120px 120px;
-
-pointer-events:none;
+    transition: .3s;
 
 }
 
-/* Dunkelblaue Quadrate */
+.sidebar button:hover {
 
-body::after{
-
-content:"";
-
-position:fixed;
-
-top:18px;
-
-left:18px;
-
-width:100%;
-
-height:100%;
-
-background-image:
-
-linear-gradient(rgba(0,40,90,0.22) 2px, transparent 2px),
-
-linear-gradient(90deg, rgba(0,40,90,0.22) 2px, transparent 2px);
-
-background-size:120px 120px;
-
-pointer-events:none;
+    transform: scale(1.05);
 
 }
 
-h1{
+.submenu {
 
-text-align:center;
+    margin-left: 20px;
 
-font-size:48px;
-
-margin-top:40px;
-
-text-shadow:
-3px 3px 0 black,
-6px 6px 12px rgba(0,0,0,0.5);
+    margin-bottom: 20px;
 
 }
 
-nav{
+.submenu button {
 
-display:flex;
+    font-size: 16px;
 
-justify-content:center;
-
-gap:20px;
-
-margin-top:40px;
+    padding: 12px;
 
 }
 
-button{
+/* ---------------- CONTENT ---------------- */
 
-background:white;
+.content {
 
-border:none;
+    flex: 1;
 
-padding:15px 30px;
+    margin: 35px;
 
-font-size:20px;
+    padding: 40px;
 
-border-radius:15px;
+    border-radius: 25px;
 
-cursor:pointer;
+    background: rgba(255,255,255,.18);
 
-transition:0.3s;
+    backdrop-filter: blur(10px);
 
-}
-
-button:hover{
-
-transform:scale(1.05);
+    overflow: auto;
 
 }
 
-.content{
+.content h2 {
 
-width:70%;
+    font-size: 42px;
 
-margin:60px auto;
+    margin-top: 0;
 
-background:rgba(255,255,255,0.15);
+    color: white;
 
-backdrop-filter:blur(10px);
+    text-shadow:
+        3px 3px black,
+        6px 6px 10px rgba(0,0,0,.4);
 
-border-radius:20px;
+}
 
-padding:30px;
+.content p {
+
+    font-size: 22px;
+
+    line-height: 1.6;
 
 }
