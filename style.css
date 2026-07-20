@@ -1,1 +1,102 @@
+/* =========================
+   KUSSABDRÜCKE IM HINTERGRUND
+   ========================= */
 
+.kiss {
+    position: absolute;
+
+    width: 90px;
+    height: 55px;
+
+    background: black;
+
+    border-radius: 50% 50% 45% 45%;
+
+    opacity: 0.85;
+
+    z-index: -1;
+
+    /* dunkelblauer Schatten hinter dem Kuss */
+    filter: drop-shadow(14px 14px 0 #002b55);
+
+    transform: rotate(-15deg);
+}
+
+
+/* obere Lippenhälfte */
+
+.kiss::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 90px;
+    height: 35px;
+
+    background: black;
+
+    top: -15px;
+    left: 0;
+
+    border-radius: 50% 50% 30% 30%;
+}
+
+
+/* Linie zwischen den Lippen */
+
+.kiss::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 55px;
+    height: 8px;
+
+    background: #111;
+
+    left: 18px;
+    top: 27px;
+
+    border-radius: 50%;
+}
+
+
+/* Kuss 1 */
+
+.kiss1 {
+
+    top: 150px;
+
+    right: 160px;
+
+    transform: rotate(-25deg) scale(1.2);
+
+}
+
+
+/* Kuss 2 */
+
+.kiss2 {
+
+    bottom: 130px;
+
+    left: 400px;
+
+    transform: rotate(15deg) scale(0.8);
+
+}
+
+
+/* Kuss 3 */
+
+.kiss3 {
+
+    top: 90px;
+
+    right: 450px;
+
+    transform: rotate(-10deg) scale(0.6);
+
+}
