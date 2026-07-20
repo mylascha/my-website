@@ -9,17 +9,49 @@
 </head>
 
 <body>
-<h1>Mein Portfolio</h1>
+<nav>    
+    <h1>Mein Portfolio</h1>
 
-<nav>
 
-<button>Über mich</button>
+    <button onclick="toggleAbout()">
+        👤 Über mich ▼
+    </button>
 
-<button>Meine Stadt</button>
+<div id="aboutMenu" class="submenu">
 
-<button>Meine alte Stadt</button>
+    <button onclick="showContent('about')">
+        • Über mich
+    </button>
 
-<button>Meine Schule</button>
+    <button onclick="showContent('hobby')">
+        • Hobbys
+    </button>
+
+    <button onclick="showContent('family')">
+        • Familie
+    </button>
+
+    <button onclick="showContent('nationality')">
+        • Nationalität
+    </button>
+
+    </div>
+
+
+    <button onclick="showContent('city')">
+        🏙️ Meine Stadt
+    </button>
+
+
+    <button onclick="showContent('oldcity')">
+        🌍 Meine alte Stadt
+    </button>
+
+
+    <button onclick="showContent('school')">
+        🏫 Meine Schule
+    </button>
+
 
 </nav>
 
