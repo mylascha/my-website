@@ -40,19 +40,8 @@ content.innerHTML = `
 <h2>Informationen über mich</h2>
 
 <p>
-Name: ...
-</p>
-
-<p>
-Alter: ...
-</p>
-
-<p>
-Wohnort: ...
-</p>
-
-<p>
-Ich interessiere mich für Medien und Informatik.
+Ich heisse Milana, bin 14 Jahre alt und wohne in Düdingen. Ich habe am 29. Januar Geburtstag.
+Ich höre sehr gerne Rockmusik und mein Lieblingsfilm ist Harry Potter. Ich probiere gerne neue Sachen aus und finde es spannend, immer wieder etwas Neues zu lernen. Ausserdem verbringe ich gerne Zeit mit Freunden und meiner Familie.
 </p>
 
 <img src="images/me.jpg" class="photo">
@@ -68,7 +57,8 @@ content.innerHTML = `
 <h2>Meine Hobbys</h2>
 
 <p>
-Hier kannst du deine Hobbys schreiben.
+In meiner Freizeit wird mir eigentlich nie langweilig. Ich mache Luftakrobatik, spiele Gitarre und zeichne gerne.
+An meinen Hobbys gefällt mir, dass jedes etwas anderes ist. Bei der Luftakrobatik kann ich mich auspowern, beim Zeichnen meiner Fantasie freien Lauf lassen und beim Gitarrespielen einfach entspannen. Ich finde es schön, verschiedene Sachen auszuprobieren und dabei immer etwas Neues zu lernen.
 </p>
 
 <img src="images/hobby.jpg" class="photo">
@@ -84,29 +74,15 @@ content.innerHTML = `
 <h2>Meine Familie</h2>
 
 <p>
-Hier kannst du etwas über deine Familie schreiben.
+Ich wohne mit meiner Mutter Oksana und meinem Vater Vadim zusammen. Ich habe keine Geschwister und bin Einzelkind.
+Wir unternehmen gerne etwas zusammen. Am Wochenende machen wir oft Ausflüge oder fahren an neue Orte. Diese gemeinsame Zeit macht mir immer viel Spass.
 </p>
 
 <img src="images/familie.jpg" class="photo">
+
 `;
 
-};
-
-/* Nationalität */
-
-nationButton.onclick = () => {
-
-content.innerHTML = `
-<h2>Meine Nationalität</h2>
-
-<p>
-Hier kannst du erzählen, woher du kommst und welche Sprachen du sprichst.
-</p>
-
-<img src="images/flagge.jpg" class="photo">
-`;
-
-};
+}
 
 /* Stadt */
 
@@ -118,7 +94,8 @@ content.innerHTML = `
 <img src="images/stadt.jpg" class="photo">
 
 <p>
-Hier schreibst du Informationen über deine Stadt.
+Ich wohne in Düdingen (3186) im Kanton Freiburg. Mir gefällt, dass es hier ruhig ist und es viele schöne Orte in der Natur gibt. Trotzdem sind grössere Städte nicht weit entfernt.
+In Düdingen leben etwas mehr als 8'000 Menschen. Die Gemeinde ist ungefähr 31 km² gross und wurde im 12. Jahrhundert zum ersten Mal erwähnt
 </p>
 `;
 
@@ -134,7 +111,9 @@ content.innerHTML = `
 <img src="images/altestadt.jpg" class="photo">
 
 <p>
-Hier schreibst du Informationen über deine alte Stadt.
+Ich komme ursprünglich aus Berdjansk in der Ukraine. Die Stadt liegt direkt am Asowschen Meer und ist für ihre lange Promenade und die Strände bekannt.
+Berdjansk wurde 1827 gegründet und ist ungefähr 82 km² gross. Vor dem Krieg lebten dort rund 110'000 Menschen.
+Ich habe dort viele schöne Erinnerungen gesammelt und freue mich immer, wenn ich an meine alte Heimat denke
 </p>
 `;
 
@@ -150,7 +129,8 @@ content.innerHTML = `
 <img src="images/schule.jpg" class="photo">
 
 <p>
-Hier schreibst du Informationen über deine Schule.
+Ich besuche die OS Düdingen. Meine Klassenlehrerin heisst Frau Bieri.
+In der Schule lerne ich viele verschiedene Fächer. Besonders mag ich Aufgaben, bei denen ich kreativ sein kann oder im Team arbeite. Ausserdem finde ich es spannend, neue Dinge zu lernen und mich weiterzuentwickeln
 </p>
 `;
 
