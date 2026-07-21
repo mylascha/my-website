@@ -1,189 +1,224 @@
-/* ---------------- BODY ---------------- */
+/* ========================= */
+/*          BODY             */
+/* ========================= */
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: white;
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+    overflow:hidden;
 
-    background: linear-gradient(
-        135deg,
-        #8be8ff 0%,
-        #5fcfff 25%,
-        #3298e6 55%,
-        #1f66b8 80%,
-        #143f73 100%
-    );
-
-    min-height: 100vh;
-    overflow: hidden;
+    background:
+    linear-gradient(
+    135deg,
+    #8fe7ff 0%,
+    #63d2ff 25%,
+    #389de8 55%,
+    #2369bc 80%,
+    #15396d 100%);
 }
 
-/* ---------- Schwarze Quadrate ---------- */
+/* ========================= */
+/*     Hintergrund           */
+/* ========================= */
 
-body::before {
+.background{
 
-    content: "";
+    position:fixed;
 
-    position: fixed;
+    inset:0;
 
-    inset: 0;
+    z-index:-1;
+
+    overflow:hidden;
+
+}
+
+/* Quallen */
+
+.background::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
 
     background-image:
-        linear-gradient(rgba(0,0,0,.08) 2px, transparent 2px),
-        linear-gradient(90deg, rgba(0,0,0,.08) 2px, transparent 2px);
 
-    background-size: 170px 170px;
+    url("https://www.transparenttextures.com/patterns/asfalt-light.png");
 
-    pointer-events: none;
+    opacity:.08;
 
 }
 
-/* ---------- Dunkelblaue Quadrate ---------- */
+/* ========================= */
+/*        Layout             */
+/* ========================= */
 
-body::after {
+.container{
 
-    content: "";
+    display:flex;
 
-    position: fixed;
-
-    inset: 0;
-
-    transform: translate(18px,18px);
-
-    background-image:
-        linear-gradient(rgba(0,40,90,.12) 2px, transparent 2px),
-        linear-gradient(90deg, rgba(0,40,90,.12) 2px, transparent 2px);
-
-    background-size: 170px 170px;
-
-    pointer-events: none;
+    height:100vh;
 
 }
 
-/* ---------------- LAYOUT ---------------- */
+/* ========================= */
+/*       Sidebar             */
+/* ========================= */
 
-.container {
+.sidebar{
 
-    display: flex;
+    width:280px;
 
-    height: 100vh;
+    background:rgba(10,20,60,.28);
 
-}
+    backdrop-filter:blur(15px);
 
-/* ---------------- SIDEBAR ---------------- */
+    padding:30px;
 
-.sidebar {
-
-    width: 280px;
-
-    background: rgba(20,20,40,.35);
-
-    backdrop-filter: blur(12px);
-
-    padding: 30px;
-
-    box-sizing: border-box;
+    box-sizing:border-box;
 
 }
 
-.sidebar h1 {
+/* Titel */
 
-    text-align: center;
+.sidebar h1{
 
-    font-size: 34px;
+    font-size:38px;
 
-    margin-bottom: 40px;
+    text-align:center;
 
-    color: white;
+    margin-bottom:40px;
+
+    color:white;
+
+    -webkit-text-stroke:1.4px black;
 
     text-shadow:
-        3px 3px black,
-        6px 6px 10px rgba(0,0,0,.4);
+    3px 3px 6px rgba(0,0,0,.45);
 
 }
 
-.sidebar button {
+/* Buttons */
 
-    width: 100%;
+.sidebar button{
 
-    margin-bottom: 15px;
+    width:100%;
 
-    padding: 15px;
+    padding:16px;
 
-    border: none;
+    margin-bottom:16px;
 
-    border-radius: 15px;
+    border:none;
 
-    background: white;
+    border-radius:18px;
 
-    font-size: 18px;
+    cursor:pointer;
 
-    cursor: pointer;
+    color:white;
 
-    transition: .3s;
+    font-size:18px;
 
-}
+    font-weight:bold;
 
-.sidebar button:hover {
+    background:
+    linear-gradient(
+    135deg,
+    #103b9b,
+    #341b88);
 
-    transform: scale(1.05);
+    transition:.3s;
 
-}
-
-.submenu {
-
-    margin-left: 20px;
-
-    margin-bottom: 20px;
-
-}
-
-.submenu button {
-
-    font-size: 16px;
-
-    padding: 12px;
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.25);
 
 }
 
-/* ---------------- CONTENT ---------------- */
+/* Hover */
 
-.content {
+.sidebar button:hover{
 
-    flex: 1;
+    transform:translateY(-3px);
 
-    margin: 35px;
-
-    padding: 40px;
-
-    border-radius: 25px;
-
-    background: rgba(255,255,255,.18);
-
-    backdrop-filter: blur(10px);
-
-    overflow: auto;
+    background:
+    linear-gradient(
+    135deg,
+    #2d66d8,
+    #5b33cc);
 
 }
 
-.content h2 {
+/* Untermenü */
 
-    font-size: 42px;
+.submenu{
 
-    margin-top: 0;
+    margin-left:18px;
 
-    color: white;
+    margin-bottom:25px;
+
+}
+
+.submenu button{
+
+    font-size:16px;
+
+    padding:12px;
+
+}
+
+/* ========================= */
+/*       Content             */
+/* ========================= */
+
+.content{
+
+    flex:1;
+
+    margin:40px;
+
+    padding:40px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(14px);
+
+    overflow:auto;
+
+}
+
+/* Überschrift */
+
+.content h2{
+
+    font-size:42px;
+
+    margin-top:0;
+
+    color:white;
+
+    -webkit-text-stroke:1.3px black;
 
     text-shadow:
-        3px 3px black,
-        6px 6px 10px rgba(0,0,0,.4);
+    4px 4px 8px rgba(0,0,0,.45);
 
 }
 
-.content p {
+/* Text */
 
-    font-size: 22px;
+.content p{
 
-    line-height: 1.6;
+    font-size:22px;
+
+    line-height:1.7;
+
+    color:white;
+
+    -webkit-text-stroke:.5px black;
 
 }
