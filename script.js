@@ -3,24 +3,24 @@ const content = document.querySelector(".content");
 const aboutButton = document.getElementById("aboutButton");
 const aboutMenu = document.getElementById("aboutMenu");
 
-const nameButton = document.getElementById("nameButton");
+const infoButton = document.getElementById("nameButton");
 const hobbyButton = document.getElementById("hobbyButton");
-const photoButton = document.getElementById("photoButton");
-const zielButton = document.getElementById("zielButton");
+const familyButton = document.getElementById("photoButton");
+const nationButton = document.getElementById("zielButton");
 
-const stadtButton = document.getElementById("stadtButton");
-const alteStadtButton = document.getElementById("alteStadtButton");
-const schuleButton = document.getElementById("schuleButton");
+const cityButton = document.getElementById("stadtButton");
+const oldCityButton = document.getElementById("alteStadtButton");
+const schoolButton = document.getElementById("schuleButton");
 
-/* Untermenü zuerst verstecken */
+/* Untermenü verstecken */
 
 aboutMenu.style.display = "none";
 
 /* Menü öffnen */
 
-aboutButton.onclick = function () {
+aboutButton.onclick = () => {
 
-    if (aboutMenu.style.display === "none") {
+    if (aboutMenu.style.display == "none") {
 
         aboutMenu.style.display = "block";
 
@@ -32,112 +32,126 @@ aboutButton.onclick = function () {
 
 };
 
-/* Name */
+/* Informationen */
 
-nameButton.onclick = function () {
+infoButton.onclick = () => {
 
-    content.innerHTML = `
-        <h2>Mein Name</h2>
+content.innerHTML = `
+<h2>Informationen über mich</h2>
 
-        <p>
-        Hier kommt später dein Name.
-        </p>
-    `;
+<p>
+Name: ...
+</p>
+
+<p>
+Alter: ...
+</p>
+
+<p>
+Wohnort: ...
+</p>
+
+<p>
+Ich interessiere mich für Medien und Informatik.
+</p>
+
+<img src="images/me.jpg" class="photo">
+`;
 
 };
 
 /* Hobbys */
 
-hobbyButton.onclick = function () {
+hobbyButton.onclick = () => {
 
-    content.innerHTML = `
-        <h2>Meine Hobbys</h2>
+content.innerHTML = `
+<h2>Meine Hobbys</h2>
 
-        <p>
-        Hier schreibst du deine Hobbys.
-        </p>
-    `;
+<p>
+Hier kannst du deine Hobbys schreiben.
+</p>
 
-};
-
-/* Fotos */
-
-photoButton.onclick = function () {
-
-    content.innerHTML = `
-        <h2>Meine Fotos</h2>
-
-        <img src="images/foto1.jpg"
-        width="350">
-
-        <p>
-        Beschreibung zum Foto.
-        </p>
-    `;
+<img src="images/hobby.jpg" class="photo">
+`;
 
 };
 
-/* Ziele */
+/* Familie */
 
-zielButton.onclick = function () {
+familyButton.onclick = () => {
 
-    content.innerHTML = `
-        <h2>Meine Ziele</h2>
+content.innerHTML = `
+<h2>Meine Familie</h2>
 
-        <p>
-        Hier schreibst du deine Ziele.
-        </p>
-    `;
+<p>
+Hier kannst du etwas über deine Familie schreiben.
+</p>
+
+<img src="images/familie.jpg" class="photo">
+`;
+
+};
+
+/* Nationalität */
+
+nationButton.onclick = () => {
+
+content.innerHTML = `
+<h2>Meine Nationalität</h2>
+
+<p>
+Hier kannst du erzählen, woher du kommst und welche Sprachen du sprichst.
+</p>
+
+<img src="images/flagge.jpg" class="photo">
+`;
 
 };
 
 /* Stadt */
 
-stadtButton.onclick = function () {
+cityButton.onclick = () => {
 
-    content.innerHTML = `
-        <h2>Meine Stadt</h2>
+content.innerHTML = `
+<h2>Meine Stadt</h2>
 
-        <p>
-        Hier schreibst du über deine Stadt.
-        </p>
+<img src="images/stadt.jpg" class="photo">
 
-        <img src="images/stadt.jpg"
-        width="450">
-    `;
+<p>
+Hier schreibst du Informationen über deine Stadt.
+</p>
+`;
 
 };
 
 /* Alte Stadt */
 
-alteStadtButton.onclick = function () {
+oldCityButton.onclick = () => {
 
-    content.innerHTML = `
-        <h2>Meine alte Stadt</h2>
+content.innerHTML = `
+<h2>Meine alte Stadt</h2>
 
-        <p>
-        Hier schreibst du über deine alte Stadt.
-        </p>
+<img src="images/altestadt.jpg" class="photo">
 
-        <img src="images/altestadt.jpg"
-        width="450">
-    `;
+<p>
+Hier schreibst du Informationen über deine alte Stadt.
+</p>
+`;
 
 };
 
 /* Schule */
 
-schuleButton.onclick = function () {
+schoolButton.onclick = () => {
 
-    content.innerHTML = `
-        <h2>Meine Schule</h2>
+content.innerHTML = `
+<h2>Meine Schule</h2>
 
-        <p>
-        Hier schreibst du Informationen über deine Schule.
-        </p>
+<img src="images/schule.jpg" class="photo">
 
-        <img src="images/schule.jpg"
-        width="450">
-    `;
+<p>
+Hier schreibst du Informationen über deine Schule.
+</p>
+`;
 
 };
