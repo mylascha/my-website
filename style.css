@@ -1,22 +1,23 @@
 /* ========================= */
 /*          BODY             */
 /* ========================= */
+body {
 
-body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    color:white;
-    overflow:hidden;
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    color: white;
 
     background:
-    linear-gradient(
-    135deg,
-    #8fe7ff 0%,
-    #63d2ff 25%,
-    #389de8 55%,
-    #2369bc 80%,
-    #15396d 100%);
+    linear-gradient(135deg,
+    #4fc3f7 0%,
+    #2b7ec1 30%,
+    #184f87 60%,
+    #0f3157 100%);
+
 }
+
 
 /* ========================= */
 /*     Hintergrund           */
