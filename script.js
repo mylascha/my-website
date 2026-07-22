@@ -28,6 +28,7 @@ aboutButton.onclick = () => {
 
         aboutMenu.style.display = "none";
 
+<img src="images/sea.jpg.png" class="photo">
     }
 
 };
