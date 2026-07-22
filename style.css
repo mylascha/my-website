@@ -1,23 +1,27 @@
 /* ========================= */
 /*          BODY             */
 /* ========================= */
-body {
+body{
 
-    margin: 0;
+    margin:0;
 
-    font-family: Arial, sans-serif;
+    font-family:Arial,sans-serif;
 
-    color: white;
+    color:white;
 
-    background:
-    linear-gradient(135deg,
-    #4fc3f7 0%,
-    #2b7ec1 30%,
-    #184f87 60%,
-    #0f3157 100%);
+    background-image:
+    linear-gradient(rgba(0,0,0,.20),rgba(0,0,0,.20)),
+    url("images/sea.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    background-attachment:fixed;
 
 }
-
 
 /* ========================= */
 /*     Hintergrund           */
@@ -73,15 +77,17 @@ body {
 
 .sidebar{
 
-    width:280px;
+    width:290px;
 
-    background:rgba(10,20,60,.28);
+    background:rgba(0,0,0,.35);
 
-    backdrop-filter:blur(15px);
+    backdrop-filter:blur(18px);
 
     padding:30px;
 
     box-sizing:border-box;
+
+    box-shadow:0 0 30px rgba(0,0,0,.35);
 
 }
 
@@ -110,13 +116,13 @@ body {
 
     width:100%;
 
-    padding:16px;
+    padding:17px;
 
-    margin-bottom:16px;
+    margin-bottom:15px;
 
     border:none;
 
-    border-radius:18px;
+    border-radius:20px;
 
     cursor:pointer;
 
@@ -126,16 +132,16 @@ body {
 
     font-weight:bold;
 
-    background:
-    linear-gradient(
-    135deg,
-    #103b9b,
-    #341b88);
+    background:rgba(0,0,0,.45);
 
-    transition:.3s;
+    backdrop-filter:blur(10px);
+
+    transition:.35s;
+
+    text-align:left;
 
     box-shadow:
-    0 8px 20px rgba(0,0,0,.25);
+    0 8px 20px rgba(0,0,0,.35);
 
 }
 
@@ -143,13 +149,13 @@ body {
 
 .sidebar button:hover{
 
-    transform:translateY(-3px);
+    background:rgba(35,35,35,.75);
 
-    background:
-    linear-gradient(
-    135deg,
-    #2d66d8,
-    #5b33cc);
+    transform:translateX(8px);
+
+    box-shadow:
+
+    0 0 20px rgba(90,170,255,.8);
 
 }
 
@@ -179,20 +185,21 @@ body {
 
     flex:1;
 
-    margin:40px;
+    margin:35px;
 
     padding:40px;
 
-    border-radius:28px;
+    border-radius:30px;
 
-    background:rgba(255,255,255,.15);
+    background:rgba(0,0,0,.22);
 
-    backdrop-filter:blur(14px);
+    backdrop-filter:blur(18px);
 
     overflow:auto;
 
-}
+    box-shadow:0 0 30px rgba(0,0,0,.35);
 
+}
 /* Überschrift */
 
 .content h2{
