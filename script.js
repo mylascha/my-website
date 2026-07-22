@@ -3,10 +3,10 @@ const content = document.querySelector(".content");
 const aboutButton = document.getElementById("aboutButton");
 const aboutMenu = document.getElementById("aboutMenu");
 
-const infoButton = document.getElementById("nameButton");
+const infoButton = document.getElementById("information über mich Button");
 const hobbyButton = document.getElementById("hobbyButton");
-const familyButton = document.getElementById("photoButton");
-const nationButton = document.getElementById("zielButton");
+const familyButton = document.getElementById("familieButton");
+
 
 const cityButton = document.getElementById("stadtButton");
 const oldCityButton = document.getElementById("alteStadtButton");
@@ -134,4 +134,80 @@ In der Schule lerne ich viele verschiedene Fächer. Besonders mag ich Aufgaben, 
 </p>
 `;
 
+};
+/* Stadt */
+
+cityButton.onclick = () => {
+
+content.innerHTML = `
+
+<h2>Meine Stadt – Düdingen</h2>
+
+<p>
+Ich wohne in Düdingen im Kanton Freiburg. Mir gefällt es hier, weil es ruhig ist und man schnell in der Natur ist. Gleichzeitig sind grössere Städte wie Freiburg oder Bern nicht weit entfernt.
+</p>
+
+<p>
+Düdingen hat die Postleitzahl 3186. Hier leben ungefähr 8'300 Menschen und die Gemeinde ist rund 31 km² gross. Düdingen wurde im Jahr 1182 zum ersten Mal urkundlich erwähnt.
+</p>
+
+<p>
+Ich fühle mich hier sehr wohl und verbringe gerne Zeit mit meiner Familie oder Freunden.
+</p>
+
+<img src="images/stadt.jpg" class="photo">
+
+`;
+
+};
+
+/* Alte Stadt */
+
+oldCityButton.onclick = () => {
+
+content.innerHTML = `
+
+<h2>Meine alte Stadt – Berdjansk</h2>
+
+<p>
+Ich komme ursprünglich aus Berdjansk in der Ukraine. Die Stadt liegt direkt am Asowschen Meer und war früher ein beliebter Ferienort.
+</p>
+
+<p>
+Berdjansk wurde 1827 gegründet und ist ungefähr 82 km² gross. Vor dem Krieg lebten dort rund 110'000 Menschen.
+</p>
+
+<p>
+Ich habe viele schöne Erinnerungen an meine alte Heimat. Besonders gefallen haben mir das Meer, die langen Spaziergänge an der Promenade und die Zeit mit meiner Familie.
+</p>
+
+<img src="images/altestadt.jpg" class="photo">
+
+`;
+
+};
+
+/* Schule */
+
+schoolButton.onclick = () => {
+
+content.innerHTML = `
+
+<h2>Meine Schule – OS Düdingen</h2>
+
+<p>
+Ich besuche die OS Düdingen. Die Schule befindet sich an der Leimackerstrasse in Düdingen.
+</p>
+
+<p>
+Hier lernen mehrere hundert Schülerinnen und Schüler in verschiedenen Klassen. Meine Klassenlehrerin heisst Frau Bieri.
+</p>
+
+<p>
+In der Schule lerne ich viele verschiedene Fächer. Besonders gefallen mir kreative Aufgaben und Projekte, bei denen ich etwas Neues ausprobieren kann.
+</p>
+
+<img src="images/schule.jpg" class="photo">
+
+`;
 };
