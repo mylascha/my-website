@@ -88,12 +88,12 @@ stadtButton.onclick = () => {
 content.innerHTML = `
 <h2>Meine Stadt</h2>
 
-<img src="images/stadt.jpg.png" class="photo">
-
 <p>
 Ich wohne in Düdingen (3186) im Kanton Freiburg. Mir gefällt, dass es hier ruhig ist und es viele schöne Orte in der Natur gibt. Trotzdem sind grössere Städte nicht weit entfernt.
 In Düdingen leben etwas mehr als 8'000 Menschen. Die Gemeinde ist ungefähr 31 km² gross und wurde im 12. Jahrhundert zum ersten Mal erwähnt.
 </p>
+
+<img src="images/stadt.jpg.png" class="photo">
 `;
 
 };
@@ -105,13 +105,12 @@ alteStadtButton.onclick = () => {
 content.innerHTML = `
 <h2>Meine alte Stadt</h2>
 
-<img src="images/altestadt.jpg.png" class="photo">
-
 <p>
 Ich komme ursprünglich aus Berdjansk in der Ukraine. Die Stadt liegt direkt am Asowschen Meer und ist für ihre lange Promenade und die Strände bekannt.
 Berdjansk wurde 1827 gegründet und ist ungefähr 82 km² gross. Vor dem Krieg lebten dort rund 110'000 Menschen.
 Ich habe dort viele schöne Erinnerungen gesammelt und freue mich immer, wenn ich an meine alte Heimat denke.
 </p>
+<img src="images/altestadt.jpg.png" class="photo">
 `;
 
 };
@@ -123,12 +122,12 @@ schuleButton.onclick = () => {
 content.innerHTML = `
 <h2>Meine Schule</h2>
 
-<img src="images/schule.jpg.png" class="photo">
-
 <p>
 Ich besuche die OS Düdingen. Meine Klassenlehrerin heisst Frau Bieri.
 In der Schule lerne ich viele verschiedene Fächer. Besonders mag ich Aufgaben, bei denen ich kreativ sein kann oder im Team arbeite. Ausserdem finde ich es spannend, neue Dinge zu lernen und mich weiterzuentwickeln.
 </p>
+
+<img src="images/schule.jpg.png" class="photo">
 `;
 
 };
