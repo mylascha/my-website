@@ -11,7 +11,7 @@ body{
 
     background-image:
     linear-gradient(rgba(0,0,0,.20),rgba(0,0,0,.20)),
-    url("images/sea.jpg");
+    url("images/sea.jpg.png");
 
     background-size:cover;
 
@@ -79,7 +79,7 @@ body{
 
     width:290px;
 
-    background:rgba(0,0,0,.18);
+    background:rgba(0,0,0,.25);
 
     backdrop-filter:blur(18px);
 
@@ -230,5 +230,20 @@ body{
     color:white;
 
     -webkit-text-stroke:.5px black;
+
+}
+.photo{
+
+    width:100%;
+
+    max-width:550px;
+
+    display:block;
+
+    margin:30px auto;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
 
 }
